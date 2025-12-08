@@ -1,0 +1,28 @@
+#cloud-config
+#aws
+disable_ec2_metadata: true
+
+hostname: singleinstance
+
+packages:
+ - wget
+
+repo_update: true
+repo_upgrade: all
+
+
+# users
+users:
+  - default
+  - name: art
+    gecos: Andreas Roth
+    groups: adm
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIEAmGWtbjGnzqpsmVbDcVG6eYnWStx/vZOxg2ocmR6uVL4teLoSdATDMyhTqpyLBQFCdlEsIaMVBHxJBH6r0YQJCoN/Uic38oP3QXcgO1uDOQgG3cOHK78GJ1OMPt1R3pD8VwDfqtiv1oXrMf4A0VwKZ0SE2uZfX5S4pd9p7gHzeTE= rsa-key-20060809
+  - name: splunk
+    gecos: splunk_technica_user
+    shell: /bin/bash
+    homedir: /opt/splunk
+    groups: ['splunk', 'role-adm-splunk-admins']
