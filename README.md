@@ -29,11 +29,11 @@ ssh -i ~/.ssh/ec2-ffm-2016.pem ec2-user@IP
 ### install 
 
 ```bash
-wget -O ~/splunk.tgz https://download.splunk.com/products/splunk/releases/8.2.1/linux/splunk-8.2.1-ddff1c41e5cf-Linux-x86_64.tgz
+wget -O ~/splunk.tgz https://download.splunk.com/products/splunk/releases/10.0.2/linux/splunk-10.0.2-e2d18b4767e9-linux-amd64.tgz
 tar zxfv splunk.tgz
 ~/splunk/bin/splunk start --accept-license
 
-wget http://docs.splunk.com/images/Tutorial/tutorialdata.zip
+wget https://iksdplinux.s3.amazonaws.com/tutorialdata.zip
 unzip tutorialdata.zip
 ```
 
@@ -54,9 +54,8 @@ sourcetype=access_combined | stats count
 sourcetype=access_combined status=500 | timechart span=1h count by host
 sourcetype="access_combined" | stats sum(bytes) as bytes by host | eval MB=round(bytes/1024/1024,1) | table host MB
 
-sourcetype=linux_secure | rex field=_raw "(?<ip>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})" | iplocation ip | geostats count by Country
+sourcetype=linux_secure failed password | rex field=_raw "(?<ip>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})" | iplocation ip | geostats count by Country
 
-sourcetype=linux_secure eventtype=ssh*  | top eventtype
 ```
 
 system/local/inputs.conf

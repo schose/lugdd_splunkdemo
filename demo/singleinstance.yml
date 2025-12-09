@@ -1,12 +1,12 @@
 DryRun: false
 ImageId: 'ami-0de9f803fcac87f46' # amazon lnx
-SubnetId: 'subnet-08fedb7257a881e79' # bwlab
+SubnetId: 'subnet-9ffcefe4' # bwlab
 KeyName: 'ec2-ffm-2016'
 SecurityGroupIds:
-- 'sg-0f3e49c332f8a67c0'
-#- 'sg-3737725a'
-InstanceType: 'm5.xlarge' # 4vcp 16gb
-#InstanceType: 'm5.large' # 2vpu 8gb
+- sg-03c19696c65563bd9
+
+#InstanceType: 'm5.xlarge' # 4vcp 16gb
+InstanceType: 'm5.large' # 2vpu 8gb
 #InstanceType: 't3.large' # 2vpu 8gb
 #PrivateDnsName: "cloudidx1.bwlab.loc"
 NetworkInterfaces: # The network interfaces to associate with the instance.

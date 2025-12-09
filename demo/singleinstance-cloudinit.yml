@@ -22,7 +22,7 @@ users:
     ssh_authorized_keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIEAmGWtbjGnzqpsmVbDcVG6eYnWStx/vZOxg2ocmR6uVL4teLoSdATDMyhTqpyLBQFCdlEsIaMVBHxJBH6r0YQJCoN/Uic38oP3QXcgO1uDOQgG3cOHK78GJ1OMPt1R3pD8VwDfqtiv1oXrMf4A0VwKZ0SE2uZfX5S4pd9p7gHzeTE= rsa-key-20060809
   - name: splunk
-    gecos: splunk_technica_user
+    gecos: splunk_technical_user
     shell: /bin/bash
     homedir: /opt/splunk
     groups: ['splunk', 'role-adm-splunk-admins']
