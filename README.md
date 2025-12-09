@@ -23,7 +23,8 @@ aws ec2 describe-instances --filters "Name=instance-state-name,Values=running"  
 - connect
 
 ```bash
-ssh -i ~/.ssh/ec2-ffm-2016.pem ec2-user@IP
+update ~/.ssh/config
+ssh -i ~/.ssh/ec2-ffm-2016.pem art@IP
 ```
 
 ### install 
