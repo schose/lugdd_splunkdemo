@@ -33,7 +33,6 @@ h1 {
 </style>
 <!-- Global style -->
 
---- 
 ![bg](img/background-chapter.png)
 
 
@@ -206,10 +205,6 @@ Entwickler (Jason Conger… Citrix) - Splunk
 - Community
 - Developers
 - You!
-
---- 
-![bg](img/background-chapter.png)
-
 
 
 --- 
