@@ -1,4 +1,4 @@
-# tlug-splunk
+# lugdd_splunk
 
 
 ### start slides
@@ -70,4 +70,6 @@ journalctl-include-fields =
 index = main
 ```
 
-logger --id=1234 -t splunk "please enter credit card number"
+logger --id=1234 -t oracle "please enter credit card number"
+
+... custom viz app installieren.
