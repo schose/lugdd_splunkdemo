@@ -1,5 +1,6 @@
 DryRun: false
-ImageId: 'ami-015f3aa67b494b27e' # up-to-date amazon lnx 202512
+#ImageId: 'ami-015f3aa67b494b27e' # up-to-date amazon lnx 202512
+ImageId: 'ami-0de9f803fcac87f46' # older image
 SubnetId: 'subnet-9ffcefe4' # bwlab
 KeyName: 'ec2-ffm-2016'
 SecurityGroupIds:

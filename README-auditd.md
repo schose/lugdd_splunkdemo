@@ -137,3 +137,11 @@ https://github.com/linux-audit/audit-userspace/blob/master/rules/30-pci-dss-v31.
 ### plugins
 
 - laurel - Transform Linux Audit logs for SIEM usage
+
+
+sudo root shell
+
+```bash
+-a always,exit -F arch=b64 -S execve -F euid=0 -k sudo_root_shell
+-a always,exit -F arch=b32 -S execve -F euid=0 -k sudo_root_shell
+```
