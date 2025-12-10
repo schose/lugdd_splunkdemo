@@ -24,7 +24,7 @@ aws ec2 describe-instances --filters "Name=instance-state-name,Values=running"  
 
 ```bash
 update ~/.ssh/config
-ssh -i ~/.ssh/ec2-ffm-2016.pem art@IP
+ssh -i ~/.ssh/myprivatekey demo@IP
 ```
 
 ### install 
