@@ -6,8 +6,8 @@ KeyName: 'ec2-ffm-2016'
 SecurityGroupIds:
 - sg-03c19696c65563bd9
 
-#InstanceType: 'm5.xlarge' # 4vcp 16gb
-InstanceType: 'm5.large' # 2vpu 8gb
+InstanceType: 'm5.xlarge' # 4vcp 16gb
+#InstanceType: 'm5.large' # 2vpu 8gb
 #InstanceType: 't3.large' # 2vpu 8gb
 #PrivateDnsName: "cloudidx1.bwlab.loc"
 NetworkInterfaces: # The network interfaces to associate with the instance.
