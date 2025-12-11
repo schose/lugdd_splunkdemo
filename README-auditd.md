@@ -76,9 +76,10 @@ RefuseManualStop=yes
 -w /etc/shadow -k etcpasswd
 -w /etc/security/opasswd -k opasswd
 
+```bash
 auditctl -w /tmp/testfile -p w -k testfile_write
 auditctl -w /tmp/testfile -p r -k testfile_read
-
+```
 
 echo "hello_world" > /tmp/testfile
 

@@ -36,7 +36,7 @@ h1 {
 ![bg](img/background-chapter.png)
 
 
-# WTF - Splunk? # 
+# Was ist <br> dieses Splunk? # 
 
 <!--
 - Enterprise / Cloud
